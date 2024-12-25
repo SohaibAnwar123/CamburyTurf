@@ -1,0 +1,24 @@
+.nav_wrap {
+    padding: 24px 0;
+
+    .main_logo {
+        max-width: 530px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-link{
+        color: #111;
+    font-weight: 400;
+        &.active{
+font-weight: 700;
+        }
+    }
+    .navbar-nav{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .navbar {
+        padding: 12px 0;
+    }
+}

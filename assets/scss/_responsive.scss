@@ -1,0 +1,40 @@
+// Ipad pro 
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+    
+ }
+
+//  ipad 
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+ }
+
+//  mobile 
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .hero_wrap {
+        background-size: cover;
+    }
+    .hero_wrap .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .container {
+        grid-template-columns: 1fr !important;
+    }
+    .formBanner form {
+        grid-template-areas:
+            "aa" "bb" "cc"
+            "dd" "ee";
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .formBanner form input[type=submit]{
+    max-width: 100%;
+    }
+    .footerWrap ul {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+ }
