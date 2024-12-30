@@ -33,6 +33,37 @@
 .compost_Soil {
     padding: 40px 0;
     border: 1px solid #000;
+    .compostInner{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 16px;
+        .compostBox{
+            height: 400px;
+            position: relative;
+            z-index: 1;
+            &::before{
+                content: "";
+                background-color: rgba($color: #000000, $alpha: 0.3);
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+            }
+            img{
+                height: 100%;
+            }
+            h3{
+                color: #fff;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                font-size: 40px;
+                width: 85%;
+                text-align: center;
+            }
+        }
+    }
 
     .secImg {
         max-width: 430px;

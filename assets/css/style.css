@@ -318,6 +318,37 @@ ul {
   padding: 40px 0;
   border: 1px solid #000;
 }
+.compost_Soil .compostInner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.compost_Soil .compostInner .compostBox {
+  height: 400px;
+  position: relative;
+  z-index: 1;
+}
+.compost_Soil .compostInner .compostBox::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.compost_Soil .compostInner .compostBox img {
+  height: 100%;
+}
+.compost_Soil .compostInner .compostBox h3 {
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  width: 85%;
+  text-align: center;
+}
 .compost_Soil .secImg {
   max-width: 430px;
   width: 100%;
