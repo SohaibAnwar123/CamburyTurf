@@ -7,6 +7,10 @@
     .container {
         padding-top: 150px;
         padding-bottom: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: end;
+        gap: 30px;
     }
 
     h1 {
@@ -18,6 +22,9 @@
         line-height: 1.3;
         color: rgb(51, 51, 51);
         font-weight: 700;
+        p{
+            font-size: 70%;
+        }
     }
 
     .customBtn.contactBtn {
