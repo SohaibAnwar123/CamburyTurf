@@ -248,8 +248,8 @@ ul {
   font-weight: 700;
 }
 .nav_wrap .navbar-nav {
-  justify-content: space-between;
   width: 100%;
+  gap: 20px;
 }
 .nav_wrap .navbar {
   padding: 12px 0;
